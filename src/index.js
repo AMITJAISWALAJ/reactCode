@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ListC from './components/ListC';
+import SumC from './components/SumC';
+import Counter from './components/Counter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <ListC/>
+    <SumC num1={5} num2={3}/>
+    <br/><br/><br/>
+    <Counter/>
   </React.StrictMode>
 );
 
